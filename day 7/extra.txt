@@ -1,0 +1,31 @@
+package-lock.json- informative file, no major use 
+readme.md - description, helps us to make the application
+.gitignore : node modules folder is the most heavy folder
+we write node module folder in git ignore
+when we push the code to git we wont push node modules folder
+//gitignore not in my folder, see how  it is done 
+//where is the folder myapp?
+//forgot why package.jspn is used for.
+//use of express package
+
+//server we goonna create in homepageApi is through express
+/fs and http is fine for small applications
+//day 7, day 8 we will talk about crud
+//crud 
+create > post
+read  > get
+update >put
+delete > delete
+
+//nodemon package - to automatically detect a change and start a server and not usestart stop start stop
+local dependency - local to the folder
+global - local to the system
+they will notinstall in pack,json
+prog > node js>node modules>here the packages will be installed, globally avialbe
+for the pc.
+
+steps to installed global 
+run cmd as admin
+npm i -g nodemon
+//dev??
+npm run dev

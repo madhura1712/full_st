@@ -1,0 +1,55 @@
+.box
+{
+    color: #192f60;
+    font-size:30px;
+    text-align:left;
+}
+
+.box:hover
+{
+    color: #192f60;
+}
+.cityn
+{
+    color: #192f60;
+    font-size:16px;
+   
+    text-align:left;
+}
+
+.add
+{
+    color:#636f88;
+    font-size:16px;
+   
+    text-align:left;
+}
+.imgx
+{
+    width:250px;
+    height:250px;
+    border-radius:10px;
+}
+.blockx
+{
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    margin:10px;
+}
+.blockfill
+{
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    
+}
+.cus
+{
+    padding:10px;
+    color:#192f60;
+    text-align:left;
+}
+
+h3
+{
+     padding-left:10px;
+    color:#192f60;
+    text-align:left;
+}

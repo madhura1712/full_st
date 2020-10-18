@@ -1,0 +1,67 @@
+mongod - server
+mongo -console
+
+#mongo commands :
+to check all the databases : show dbs
+to go inside any databases : use database_name ;
+to show collections : show collections
+to print the data : db.database_name.find()
+//adding pretty makes the data more readable
+//preety is only for console not for node.js
+conditional queries 
+find all the users based on city name
+db.databasename.find({"city":"newyork"}).pretty()
+//here city is the key to be searched and new york is the value
+to find all users with city new york and name aakash
+db.databasename.find({"city":"newyork","name":"aakash"}).pretty()
+
+to insert many
+db.collection.insertMany()
+
+//inserting and creating database
+>>>creating
+use database_name , same command to access and create a database
+unless and until there is a collection, the database wont be visible
+db.user.insert({"name":"madhura","class:"ui"})
+//_id unique key
+ db.user.insert({_id:1,name:"yo",class:"ux"})
+WriteResult({ "nInserted" : 1 })
+> db.user.find().pretty()
+{
+        "_id" : ObjectId("5f3ac62cf62d64b3523ba8f8"),
+        "name" : "madhura",
+        "class" : "ui"
+}
+{ "_id" : 1, "name" : "yo", "class" : "ux" }
+> db.user.insert({_id:1,name:"elvin",class:"ux"})
+WriteResult({
+        "nInserted" : 0,
+        "writeError" : {
+                "code" : 11000,
+                "errmsg" : "E11000 duplicate key error collection: edux.user index: _id_ dup key: { _id: 1.0 }"
+        }
+})
+
+//cors - cross origin resource
+node js on differnt port nodereact will run on differrent port number
+no communication 
+to make a bridge for communication we use cors
+
+//to update the a object in the json
+db.collection_name.update({_id:1},{$set:{"class":"fullstack"}})
+//we want to update on basis of id, we want to update data where is 1
+
+
+
+db.restuanrat.find({"type.mealtype":1})
+db.restuarant.update({_id:"1},{$set:{"type.0.mealtype":"4","type.0.name":"snacks"}})
+type.0 we are saying because 0 is the index value where we want to update
+//sorting 
+db.restaurant.find({}).sort({cost:-1}).pretty()
+//finding dat between tewo range
+$gt greater than
+$lt less than
+is used for ranges
+is $gt,lt a predefined var?
+db.restaurant.find({cost:{$gt:500}}).pretty()
+db.restaurant.find({cost:{$gt:200,$lt:500}}).sort({cost:1}).pretty()

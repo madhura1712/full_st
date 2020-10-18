@@ -1,0 +1,17 @@
+3 pacakges get installed
+react - main oackage
+react-dom - help to render content on the page 
+react-script - help to start and build the project
+
+JSX - html in javascript 
+javascript xml
+.js files and one html file
+
+React component based
+two types 
+functional: light weight
+dumb component
+design and display handling
+class based: heavy and logical component
+data interaction and API calling 
+

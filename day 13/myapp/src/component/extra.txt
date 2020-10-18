@@ -1,0 +1,29 @@
+local and session - temporary storage
+localStorage.setItem('city',1)
+undefined
+//we  set the id of city as 1
+undefined
+now go to application -> local storage -> first option, we see the city id is sotred as 1
+when the city id got saved, we can get it on any page of the application.
+
+//on a different tab
+localStorage.getItem('city')
+"1"
+-persistent, wont get deleted on its own
+//will be present even after closing a tab
+
+sessionStorage.setItem("cities",2)
+undefined
+sessionStorage.getItem("cities)
+VM648:1 Uncaught SyntaxError: Invalid or unexpected token
+sessionStorage.getItem("cities")
+"2"
+>>>On another tab
+o/p:
+sessionStorage.getItem("cities")
+null
+
+Specific to a tab only
+
+something after / - param
+something after ? - query param
